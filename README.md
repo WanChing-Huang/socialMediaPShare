@@ -4,7 +4,7 @@
 ```
 npm install
 ```
-install package.json to as node-modules
+install package.json to as a new node-modules folder
 ```
 npm run dev
 ```
@@ -14,3 +14,16 @@ start the frontend react server
 npm start
 ```
 start the backend express server
+- localhost:3000
+- vite would proxy form 5174 to 3000
+
+## To edit
+- frontend part
+ - src: .jsx files
+- backend part
+ - .js file outside public folders
+
+## Build 
+```
+npm build
+```
