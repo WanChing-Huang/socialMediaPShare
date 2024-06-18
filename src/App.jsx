@@ -1,20 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import UserPage from './UserPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import AddPage from './components/AddPage';
 
-import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Router>
-        <Switch>
-          <Route path="/user/:username" component={UserPage} />
-        </Switch>
-      </Router>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/add" element={<AddPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
