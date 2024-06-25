@@ -29,18 +29,10 @@
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+
   }
   
-  .app {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-  }
+
   
   .app.add {
     cursor: pointer;

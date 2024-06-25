@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 const HomePage = () => {
+
   return (
     <div className="home-page">
       <div className="header">
@@ -18,21 +19,21 @@ const HomePage = () => {
       </div>
       <div className="apps">
         <div className="app">
-          <img src="contact-icon.png" alt="Contact" />
-          <span>Contact</span>
+          <img src="/icon/tiktok.png" alt="Contact" style={{ width: '50px', height: '50px' }} />
         </div>
         <div className="app">
-          <img src="facebook-icon.png" alt="Facebook" />
-          <span>Facebook</span>
+          <img src="/icon/linkedin.png" alt="Facebook" style={{ width: '50px', height: '50px' }}/>
         </div>
         <div className="app">
-          <img src="instagram-icon.png" alt="Instagram" />
-          <span>Instagram</span>
+          <img src="/icon/instagram.png" alt="Instagram" style={{ width: '50px', height: '50px' }}/>
         </div>
+        
         <Link to="/add">
           <div className="app add">
-            <span>+</span>
-            <span>Add</span>
+          <div className="app">
+            <img src="/icon/add-button.png" alt="Instagram" style={{ width: '60px', height: '60px' }}/>
+        </div>
+            
           </div>
         </Link>
       </div>
