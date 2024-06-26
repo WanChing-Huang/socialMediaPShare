@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
-const HomePage = () => {
+const HomePage = ({ userName }) => {
   return (
     <div className="home-page">
       <div className="header">
@@ -10,7 +10,7 @@ const HomePage = () => {
       </div>
       <div className="profile">
         <img src="profile-pic-placeholder.png" alt="User" className="profile-pic" />
-        <h1>User Name</h1>
+        <h1>`${userName}`</h1>
         <div className="actions">
           <button>multiple choice</button>
           <button>Edit</button>

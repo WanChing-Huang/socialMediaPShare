@@ -17,6 +17,12 @@ start the backend express server
 - localhost:3000
 - vite would proxy form 5174 to 3000
 
+## Install and run mongoDB
+in computer
+```
+$ brew tap mongodb/brew
+brew services start mongodb-community@7.0
+```
 ## To edit
 - frontend part
  - src: .jsx files
